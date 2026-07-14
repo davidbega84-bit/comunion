@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!--
+  ARCHIVO "ENVOLTORIO" PARA LA MINIATURA DE WHATSAPP.
+  Da la vista previa bonita (foto + titulo) y redirige a tu invitacion.
+
+  COMO USARLO (gratis, con GitHub Pages):
+  1. Crea una cuenta en github.com (si no la tienes).
+  2. Crea un repositorio PUBLICO (por ejemplo "comunion").
+  3. Sube a ese repositorio DOS archivos:
+       - este archivo, con el nombre  index.html
+       - la imagen  miniatura_whatsapp.jpg
+  4. Cambia abajo las 3 cosas marcadas con  CAMBIA.
+  5. En el repositorio: Settings -> Pages -> Source: main -> Save.
+  6. Tu enlace sera:  https://TU-USUARIO.github.io/comunion/
+     Ese es el que envias por WhatsApp.
+-->
+
+<!-- CAMBIA 1) Titulo que se vera en la vista previa -->
+<title>Primera Comunión de Mar</title>
+<meta property="og:title" content="Primera Comunión de Mar">
+
+<!-- CAMBIA 2) Descripcion de la vista previa -->
+<meta property="og:description" content="¡Mar te invita a su comunión! Pulsa para ver la invitación, las ubicaciones y la cuenta atrás.">
+
+<!-- CAMBIA 3) URL de la imagen (la subida a tu GitHub). Reemplaza TU-USUARIO y, si cambiaste
+     el nombre del repo o del archivo, ajustalo tambien. -->
+<meta property="og:image" content="https://beatrizcerero-GH.github.io/comunion/miniatura_whatsapp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- CAMBIA 4) URL de tu invitacion en Apps Script (la que termina en /exec) -->
+<meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxQeqJjXxCCaF3tjrghfZ_lT4O2_oov0I0doa5VqJHRXFnOvPq9U2ezG5bB5F9Nv_hz/exec">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body{font-family:Georgia,'Cormorant Garamond',serif;background:#F3EBDA;color:#4C6879;
+       display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center}
+  a{color:#C2A56A}
+</style>
+</head>
+<body>
+  <!-- Por si la redireccion tardara un instante -->
+  <p>Abriendo la invitación de Mar…<br>
+     <a href="https://https://script.google.com/macros/s/AKfycbxQeqJjXxCCaF3tjrghfZ_lT4O2_oov0I0doa5VqJHRXFnOvPq9U2ezG5bB5F9Nv_hz/execc">Pulsa aquí si no se abre sola</a>
+  </p>
+</body>
+</html>

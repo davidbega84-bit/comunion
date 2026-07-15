@@ -2,40 +2,61 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
 
-<!-- =========================================================
-     ESTE ARCHIVO VA EN GITHUB (no en Apps Script).
-     Solo hace 2 cosas:
-       1) dar la miniatura bonita en WhatsApp
-       2) redirigir a la invitacion de Apps Script
-     ========================================================= -->
+  ARCHIVO "ENVOLTORIO" PARA LA MINIATURA DE WHATSAPP.
+  Da la vista previa bonita (foto + titulo) y redirige a tu invitacion.
 
+  COMO USARLO (gratis, con GitHub Pages):
+  1. Crea una cuenta en github.com (si no la tienes).
+  2. Crea un repositorio PUBLICO (por ejemplo "comunion").
+  3. Sube a ese repositorio DOS archivos:
+       - este archivo, con el nombre  index.html
+       - la imagen  miniatura_whatsapp.jpg
+  4. Cambia abajo las 3 cosas marcadas con  CAMBIA.
+  5. En el repositorio: Settings -> Pages -> Source: main -> Save.
+  6. Tu enlace sera:  https://TU-USUARIO.github.io/comunion/
+     Ese es el que envias por WhatsApp.
+-->
+
+
+<!-- CAMBIA 1) Titulo que se vera en la vista previa -->
 <title>Primera Comunión de Mar</title>
-
-<!-- Miniatura de WhatsApp -->
 <meta property="og:title" content="Primera Comunión de Mar">
-<meta property="og:description" content="¡Mar te invita a su comunión! Pincha para ver la invitación, las ubicaciones y la cuenta atrás.">
+
+
+<!-- CAMBIA 2) Descripcion de la vista previa -->
+<meta property="og:description" content="¡Mar te invita a su comunión! Pulsa para ver la invitación, las ubicaciones y la cuenta atrás.">
+
+
+
+<!-- CAMBIA 3) URL de la imagen (la subida a tu GitHub). Reemplaza TU-USUARIO y, si cambiaste
+     el nombre del repo o del archivo, ajustalo tambien. -->
 <meta property="og:image" content="https://davidbega84-bit.github.io/comunion/miniatura_whatsapp.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- ⚠️ CAMBIA ESTO: pega tu URL de Apps Script (la que acaba en /exec).
-     Aparece AQUI y tambien abajo, en el enlace. Cambiala en los dos sitios. -->
+
+<!-- CAMBIA 4) URL de tu invitacion en Apps Script (la que termina en /exec) -->
 <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxSamodfUwEByRIJLqkZHWZmWvevUD__04Lh0jDuvLWJXoh83htJjdmyNiv9u66uMei/exec">
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body{font-family:Georgia,serif;background:#F3EBDA;color:#4C6879;
+  body{font-family:Georgia,'Cormorant Garamond',serif;background:#F3EBDA;color:#4C6879;
        display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center}
   a{color:#C2A56A}
 </style>
 </head>
 <body>
+  <!-- Por si la redireccion tardara un instante -->
   <p>Abriendo la invitación de Mar…<br>
-     <!-- ⚠️ CAMBIA ESTO TAMBIEN: la misma URL /exec -->
      <a href="https://script.google.com/macros/s/AKfycbxSamodfUwEByRIJLqkZHWZmWvevUD__04Lh0jDuvLWJXoh83htJjdmyNiv9u66uMei/exec">Pulsa aquí si no se abre sola</a>
   </p>
 </body>
 </html>
+
+
+
